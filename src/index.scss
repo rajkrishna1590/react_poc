@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+$font-sizes: 10, 12, 14, 16, 18, 20, 22, 24, 26, 30, 34, 40, 48;
+@each $size in $font-sizes {
+  .fn-size-#{$size} {
+    font-size: rem($size);
+  }
+  .fn-size-#{$size}-imp {
+    font-size: rem($size) !important;
+  }
+}
